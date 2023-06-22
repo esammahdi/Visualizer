@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earthquake Data</title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Earthquake Data</h1>
+        <p>This app scrapes data from <a href="http://ds.iris.edu/seismon/eventlist/index.phtml">this website</a> and writes it to a MongoDB database. It also sends the data to another app using Kafka.</p>
+        <p>You can see the last 10 records below and create a new record using the form.</p>
+        <!-- Table for displaying records -->
+        <table class="table table-striped table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Date</th>
+                    <th>Latitude</th>
+                    <th>Longitude</th>
+                    <th>Magnitude</th>
+                    <th>Depth</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody id="records">
+                <% records.forEach(record => { %>
+                <tr>
+                    <td><%= record.date.toLocaleString(); %></td>
+                    <td><%= record.latitude %></td>
+                    <td><%= record.longitude %></td>
+                    <td><%= record.magnitude %></td>
+                    <td><%= record.depth %></td>
+                    <td><%= record.location %></td>
+                </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- jQuery CDN -->
+    <script src ="https://code.jquery.com/jquery-3.5.1.min.js "></script >
+    <!-- Custom script -->
+    <script src ="/script.js "></script >
+</body>
+</html>

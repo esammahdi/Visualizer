@@ -1,0 +1,16 @@
+/* Add some margin and padding to the container */
+.container {
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  /* Add some space between the form inputs and the button */
+  .form-group {
+    margin-right: 10px;
+  }
+  
+  /* Add some space between the alert message and the form */
+  .alert {
+    margin-top: 10px;
+  }
+  
