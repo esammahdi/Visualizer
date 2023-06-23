@@ -134,4 +134,4 @@ See the [Contributing](CONTRIBUTING) file for more details.
 
 ## License
 
-Visualizer is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+Visualizer is licensed under the GNU General Public License v3.0. See the [LICENSE](LICENSE) file for more details.
