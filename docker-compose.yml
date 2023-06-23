@@ -57,9 +57,23 @@ services:
       kafka-net:
         aliases:
           - producer
+  consumer:
+    image: visualizer-consumer:1.0.0
+    container_name: consumer
+    environment:
+      - KAFKA_BROKER=kafka:9091
+      - KAFKA_TOPIC=earthquake
+    ports:
+      - "3000:3000"
+    depends_on:
+      - kafka
+      - mongo
+      - producer
+    networks:
+      kafka-net:
+        aliases:
+          - consumer
 
 networks:
   kafka-net:
     driver: bridge
-
-
