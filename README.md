@@ -124,13 +124,13 @@ MONGO_URI=mongodb://user:pass@host:port/db
 ```
 
 ## Code of Conduct
-See the [CODE OF CONDUCT](CODE_OF_CONDUCT) file for more details.
+See the [CODE OF CONDUCT](CODE_OF_CONDUCT.md) file for more details.
 
 ## Notice
-See the [NOTICE](NOTICE) file for more details.
+See the [NOTICE](NOTICE.md) file for more details.
 
 ## Contributing
-See the [Contributing](CONTRIBUTING) file for more details.
+See the [Contributing](CONTRIBUTING,md) file for more details.
 
 ## License
 
