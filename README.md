@@ -130,7 +130,7 @@ See the [CODE OF CONDUCT](CODE_OF_CONDUCT.md) file for more details.
 See the [NOTICE](NOTICE.md) file for more details.
 
 ## Contributing
-See the [Contributing](CONTRIBUTING,md) file for more details.
+See the [CONTRIBUTING](CONTRIBUTING,md) file for more details.
 
 ## License
 
