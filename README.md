@@ -86,7 +86,7 @@ This page shows the map with the earthquake markers. You can zoom in and out, pa
 
 ![Consumer page](readme_files/main_page_tip.png)
 
-There is also a page at http://localhost:2909 that shows the last 10 records that were scraped, sorted with the newwest first.
+There is also a page at http://localhost:29009 that shows the last 10 records that were scraped, sorted with the newwest first.
 
 ![Producer page](readme_files/producer_page.png)
 
